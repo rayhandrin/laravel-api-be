@@ -47,7 +47,7 @@
             </div>
         </form>
 
-        {{-- Displaying data from database --}}
+        {{-- Displaying data from database, all of the data --}}
         <table class="rounded border-collapse ring-2 ring-gray-700 w-full text-sm text-left">
             <thead class="text-xs text-white text-gray-700 uppercase bg-gray-50 bg-gray-700 text-gray-400">
                 <tr>
