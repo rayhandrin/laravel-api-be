@@ -1,14 +1,10 @@
 name: Build Laravel docker image and push it to Dockerhub
 
 on:
-  push:
-    branches:
-      - main
-      - develop
-  pull_request:
-    branches:
-      - main
-      - develop
+    push:
+        branches: [ main ]
+    pull_request:
+        branches: [ main ]
 
 jobs:
   laravel-tests:
@@ -34,7 +30,6 @@ jobs:
         run: chmod -R 777 storage bootstrap/cache
 
   build-push:
-    if: ${{ github.ref == 'refs/heads/develop' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout codes
@@ -47,7 +42,6 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push to development repository
-        if: ${{ github.ref == 'refs/heads/develop' }}
         uses: docker/build-push-action@v3
         with:
           push: true
