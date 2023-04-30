@@ -40,7 +40,7 @@
 
             <div class="flex items-center justify-center">
                 <button
-                    class="text-xs ring-2 ring-gray-700 hover:ring-2 hover:ring-gray-500 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    class="text-xs ring-3 ring-gray-700 hover:ring-2 hover:ring-gray-500 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                     type="submit">
                     INSERT
                 </button>
