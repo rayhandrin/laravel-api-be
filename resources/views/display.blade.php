@@ -64,7 +64,7 @@
                         <td class="px-6 py-2 overflow-hidden">{{ $post->title }}</td>
                         <td class="px-6 py-2 overflow-hidden">{{ $post->content }}</td>
 
-                        {{-- Shows JSON response --}}
+                        {{-- Shows JSON response by directing the page to API response endpoint --}}
                         <td class="text-center px-6 py-2 overflow-hidden">
                             <a href="{{ url('api/v1/posts/' . $post->id) }}">
                                 <button
