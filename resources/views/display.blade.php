@@ -15,7 +15,7 @@
         <h1 class="text-3xl font-bold text-gray-700">API TESTING</h1>
     </div>
 
-    {{-- Input form for inserting new data to database --}}
+    {{-- Input form for inserting new data to database (this is on the same page with displaying data) --}}
     <div class="mx-32 mb-5">
         <form action="{{ url('posts/store') }}" method="POST"
             class="ring-2 ring-slate-900/10 shadow-xl rounded px-7 py-7 mb-4">
