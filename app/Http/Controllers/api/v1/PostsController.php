@@ -43,11 +43,9 @@ class PostsController extends Controller
             $request->all(),
             [
                 'title'     => 'required',
-                'content'   => 'required',
             ],
             [
                 'title.required' => 'Masukkan Title Post !',
-                'content.required' => 'Masukkan Content Post !',
             ]
         );
 
@@ -60,7 +58,6 @@ class PostsController extends Controller
         } else {
             $post = Post::create([
                 'title'     => $request->input('title'),
-                'content'   => $request->input('content')
             ]);
 
             if ($post) {

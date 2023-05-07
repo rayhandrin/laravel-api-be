@@ -29,15 +29,6 @@
                     name="title" type="text" placeholder="Nganu, pak, ini untuk judul ...">
             </div>
 
-            <div class="mb-4">
-                <label class="block text-gray-700 text-sm font-bold mb-2" for="title">
-                    Content
-                </label>
-                <input
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    name="content" type="text" placeholder="Nah, kalau yang ini buat kontennya pak ...">
-            </div>
-
             <div class="flex items-center justify-center">
                 <button
                     class="text-xs ring-3 ring-gray-700 hover:ring-2 hover:ring-gray-500 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
@@ -53,7 +44,6 @@
                 <tr>
                     <th scope="col" class="text-center px-2 py-3">ID</th>
                     <th scope="col" class="px-6 py-3">Title</th>
-                    <th scope="col" class="px-6 py-3">Content</th>
                     <th scope="col" class="text-center px-6 py-3">JSON</th>
                 </tr>
             </thead>
@@ -62,7 +52,6 @@
                     <tr border-t-1>
                         <td class="text-center px-2 py-2">{{ $post->id }}</td>
                         <td class="px-6 py-2 overflow-hidden">{{ $post->title }}</td>
-                        <td class="px-6 py-2 overflow-hidden">{{ $post->content }}</td>
 
                         {{-- Shows JSON response by directing the page to API response endpoint --}}
                         <td class="text-center px-6 py-2 overflow-hidden">

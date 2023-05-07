@@ -34,11 +34,9 @@ class PostsW extends Controller
                 $request->all(),
                 [
                     'title'     => 'required',
-                    'content'   => 'required',
                 ],
                 [
-                    'title.required' => 'Masukkan Title Post !',
-                    'content.required' => 'Masukkan Content Post !',
+                    'title.required' => 'Masukkan Title Post!',
                 ]
             );
 
@@ -51,7 +49,6 @@ class PostsW extends Controller
                 // If the input data is valid, save the data to database
                 $post = new Post();
                 $post->title = $request->input('title');
-                $post->content = $request->input('content');
                 $post->save();
 
                 // If the data is saved, return to the list of all posts
